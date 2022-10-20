@@ -69,12 +69,15 @@ const Input = () => {
   };
 
   const checkall = () => {
-    todos.map((todo) => {
+    // todos.map((todo) => (
         
-      todo.checked = !todo.checked;
-      setTodos([...todos]);
-      return
-    });
+    //   
+    // ));
+todos.map((todo) => (
+    todo.checked = !todo.checked
+
+)
+)
   };
 
   return (

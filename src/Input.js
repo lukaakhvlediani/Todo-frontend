@@ -47,6 +47,9 @@ const Input = () => {
         setFiltered(todos.filter((x) => !x.checked));
         setTodos(todos.filter((item) => !item.checked));
         return;
+        default:{
+            console.log('todo')
+        }
     }
   };
   const handleDeleteTodos = () => {
@@ -67,8 +70,10 @@ const Input = () => {
 
   const checkall = () => {
     todos.map((todo) => {
+        
       todo.checked = !todo.checked;
       setTodos([...todos]);
+      return
     });
   };
 

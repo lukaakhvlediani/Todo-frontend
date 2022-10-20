@@ -36,7 +36,7 @@ export default function ThemeContextWrapper(props) {
         document.body.classList.remove('white-content');
         break;
     }
-  }, [theme]);
+  }, [theme,darker,item,moon]);
 
   return (
     <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
